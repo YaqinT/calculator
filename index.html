@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{margin:0;padding:0}
+      body{
+        width:100vw;
+        height:100vh;
+        background-image:url("bg.jpeg");
+        justify-content:center;
+        display:flex;
+        align-items:center;
+        align-content:center;
+      }
+      .wrapper{
+        width:20vw;
+        height:55vh;
+        background:rgba(255,255,255,0.8);
+        border-radius:5px;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction:column;
+      }
+      .result{
+        width:17vw;
+        height:10vh;
+
+        border-radius:3px;
+        border:0;
+        background:#b3cad8;
+        text-align:right;
+        font-size:4rem;
+        padding-right:1vw;
+        color:white;
+
+      }
+      ul{
+        display:grid;
+        width:18vw;
+        height:36vh;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      li{
+        list-style:none;
+        background:#83aac4;
+        text-align:center;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:5px;
+        cursor:pointer;
+        font-size:1.2rem;
+      }
+      .num0{
+        grid-column-start: 1;
+        grid-column-end:   3;
+      }
+      .equal{
+        grid-column-start: 4;
+        grid-column-end:   5;
+        grid-row-start: 4;
+        grid-row-end:   6;
+      }
+      .lighter-blue{
+        background:#d0e1ea;
+      }
+      .pink{
+        background:#db5783;
+      }
+      .orange{
+        background:#ea935d;
+      }
+      li:hover{
+        background:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <input type="text" name="" value="0" class="result">
+        <ul>
+          <li class="lighter-blue">C</li>
+          <li class="lighter-blue">%</li>
+          <li class="lighter-blue">/</li>
+          <li class="lighter-blue">*</li>
+          <li class="num">7</li>
+          <li class="num">8</li>
+          <li class="num">9</li>
+          <li class="lighter-blue">-</li>
+          <li class="num">4</li>
+          <li class="num">5</li>
+          <li class="num">6</li>
+          <li class="lighter-blue">+</li>
+          <li class="num">1</li>
+          <li class="num">2</li>
+          <li class="num">3</li>
+          <li class="equal pink">=</li>
+          <li class="num0 orange">0</li>
+          <li class="num">.</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
